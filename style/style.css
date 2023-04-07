@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.orderButton {
+  padding: 0.5rem;
+}
+
+.btn {
+  background-color: white;
+  font-family: "Quantico", sans-serif;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 20%;
+  margin: 1rem 1.5rem;
+  font-size: 1rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.311);
+  color: white;
+  font-family: "Quantico", sans-serif;
+}
+body section.animation-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+body section.animation-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+  -webkit-backdrop-filter: blur(1.6px);
+          backdrop-filter: blur(1.6px);
+  z-index: -1;
+}
+body header {
+  margin-bottom: 3rem;
+}
+body header nav {
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.256);
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav ul li a {
+  font-size: 1.15rem;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+body header nav ul li a:hover {
+  color: black;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .mainSection h1 {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+body main .mainSection p {
+  font-size: 1.6rem;
+}
+body main .mainSection div.inputs form input,
+body main .mainSection div.inputs form select {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 0.35rem;
+  background-color: aliceblue;
+  font-family: "Quantico", sans-serif;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body main .mainSection div.inputs form select.selectGrade {
+  width: 3.5rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+body main .mainSection div.inputs form button.trashButton {
+  background-color: rgba(0, 0, 0, 0.021);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+body main .mainSection button.plusBtn {
+  margin: 2rem 0rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+body main .mainSection button.plusBtn i {
+  font-size: 2rem;
+  color: white;
+}
+body main .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .result section {
+  padding: 2rem;
+}
+body main .result section h1 {
+  padding: 2rem;
+  min-width: 6rem;
+  border: 3px solid rgba(251, 246, 217, 0.9);
+  border-radius: 50%;
+  text-align: center;
+  margin: 2rem;
+  animation-name: border_color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.remove {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+@keyframes border_color {
+  0% {
+    border-color: rgba(251, 246, 217, 0.8);
+  }
+  33% {
+    border-color: rgba(251, 246, 217, 0.5);
+  }
+  66% {
+    border-color: rgba(251, 246, 217, 0.2);
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduate?</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <section class="animation-wrapper">
+      <div class="slider"></div>
+    </section>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">GPA</a></li>
+          <li><a href="#">Semester</a></li>
+          <li><a href="#">Subject</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mainSection">
+        <h1 class="title">Graduate?</h1>
+
+        <div class="orderButton">
+          <button class="btn D">Desending</button>
+          <button class="btn A">Asending</button>
+        </div>
+
+        <div class="inputs">
+          <form>
+            <div class="inputSection">
+              <input
+                type="text"
+                placeholder="catogory"
+                class="classType"
+                list="options"
+              /><!-- 
+              --><select
+                name="selecterSemester"
+                class="semester"
+                style="width: 9rem"
+              >
+                <option value=""></option>
+
+                <optgroup label="freshman">
+                  <option value="f1">freshman-1</option>
+                  <option value="f2">freshman-2</option>
+                </optgroup>
+
+                <optgroup label="sophmore">
+                  <option value="sm1">sophmore-1</option>
+                  <option value="sm2">sophmore-2</option>
+                </optgroup>
+
+                <optgroup label="junior">
+                  <option value="j1">junior-1</option>
+                  <option value="j2">junior-2</option>
+                </optgroup>
+
+                <optgroup label="senior">
+                  <option value="s1">senior-1</option>
+                  <option value="s2">senior-2</option>
+                </optgroup>
+
+                <optgroup label="fifthGrade">
+                  <option value="fifth1">fifthGrade-1</option>
+                  <option value="fifth2">fifthGrade-2</option>
+                </optgroup></select
+              ><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="credits"
+                class="classCredit"
+                min="0"
+                max="10"
+              /><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="score"
+                class="classScore"
+                min="0"
+                max="100"
+              /><!-- 
+              --><select name="selectGrade" class="selectGrade">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option></select
+              ><!-- 
+              --><button class="trashButton">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </form>
+          <form>
+            <div class="inputSection">
+              <input
+                type="text"
+                placeholder="catogory"
+                class="classType"
+                list="options"
+              /><!-- 
+              --><select
+                name="selecterSemester"
+                class="semester"
+                style="width: 9rem"
+              >
+                <option value=""></option>
+
+                <optgroup label="freshman">
+                  <option value="f1">freshman-1</option>
+                  <option value="f2">freshman-2</option>
+                </optgroup>
+
+                <optgroup label="sophmore">
+                  <option value="sm1">sophmore-1</option>
+                  <option value="sm2">sophmore-2</option>
+                </optgroup>
+
+                <optgroup label="junior">
+                  <option value="j1">junior-1</option>
+                  <option value="j2">junior-2</option>
+                </optgroup>
+
+                <optgroup label="senior">
+                  <option value="s1">senior-1</option>
+                  <option value="s2">senior-2</option>
+                </optgroup>
+
+                <optgroup label="fifthGrade">
+                  <option value="fifth1">fifthGrade-1</option>
+                  <option value="fifth2">fifthGrade-2</option>
+                </optgroup></select
+              ><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="credits"
+                class="classCredit"
+                min="0"
+                max="10"
+              /><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="score"
+                class="classScore"
+                min="0"
+                max="100"
+              /><!-- 
+              --><select name="selectGrade" class="selectGrade">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option></select
+              ><!-- 
+              --><button class="trashButton">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </form>
+          <form>
+            <div class="inputSection">
+              <input
+                type="text"
+                placeholder="catogory"
+                class="classType"
+                list="options"
+              /><!-- 
+              --><select
+                name="selecterSemester"
+                class="semester"
+                style="width: 9rem"
+              >
+                <option value=""></option>
+
+                <optgroup label="freshman">
+                  <option value="f1">freshman-1</option>
+                  <option value="f2">freshman-2</option>
+                </optgroup>
+
+                <optgroup label="sophmore">
+                  <option value="sm1">sophmore-1</option>
+                  <option value="sm2">sophmore-2</option>
+                </optgroup>
+
+                <optgroup label="junior">
+                  <option value="j1">junior-1</option>
+                  <option value="j2">junior-2</option>
+                </optgroup>
+
+                <optgroup label="senior">
+                  <option value="s1">senior-1</option>
+                  <option value="s2">senior-2</option>
+                </optgroup>
+
+                <optgroup label="fifthGrade">
+                  <option value="fifth1">fifthGrade-1</option>
+                  <option value="fifth2">fifthGrade-2</option>
+                </optgroup></select
+              ><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="credits"
+                class="classCredit"
+                min="0"
+                max="10"
+              /><!-- 
+              --><input
+                style="width: 5rem"
+                type="number"
+                placeholder="score"
+                class="classScore"
+                min="0"
+                max="100"
+              /><!-- 
+              --><select name="selectGrade" class="selectGrade">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option></select
+              ><!-- 
+              --><button class="trashButton">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <button type="button" class="plusBtn">
+          <i class="fa-regular fa-square-plus"></i>
+        </button>
+
+        <div class="result">
+          <section>
+            <p id="gpaText">GPA</p>
+            <h1 id="resultGpa">0.0</h1>
+          </section>
+
+          <section>
+            <p id="gradeText">Average</p>
+            <h1 id="resultGrade">0.0</h1>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <datalist id="options" `>
+      <option value="ACCT">Accounting</option>
+      <option value="ASL">American Sign Language</option>
+      <option value="ANTH">Anthropology</option>
+      <option value="ART">Art</option>
+      <option value="BIOL">Biological Science</option>
+      <option value="BUSM">Business Mgt</option>
+      <option value="CRDEV">Career Development</option>
+      <option value="CHEM">Chemistry</option>
+      <option value="CHIN">Chinese</option>
+      <option value="COMM">Communication Studies</option>
+      <option value="CIS">Computer &amp; Information Sciences</option>
+      <option value="CS">Computer Science</option>
+      <option value="CRMJ">Criminal Justice</option>
+      <option value="ECON">Economics</option>
+      <option value="EDU">Education</option>
+      <option value="ELED">Elementary Education</option>
+      <option value="EMGT">Emergency Management</option>
+      <option value="ENGL">English</option>
+      <option value="EIL">English as Int'l Language</option>
+      <option value="ENTR">Entrepreneurship</option>
+      <option value="EXS">Exercise Sport Science</option>
+      <option value="FILM">Film</option>
+      <option value="FIN">Finance</option>
+      <option value="FORS">Forensic Science</option>
+      <option value="FREN">French</option>
+      <option value="GEOG">Geography</option>
+      <option value="HAWN">Hawaiian</option>
+      <option value="HWST">Hawaiian Studies</option>
+      <option value="HLTH">Health</option>
+      <option value="HIST">History</option>
+      <option value="HEC">Home Economics</option>
+      <option value="HTM">Hospitality Tourism Mgt</option>
+      <option value="HUM">Humanities</option>
+      <option value="IS">Information System</option>
+      <option value="IT">Information Technology</option>
+      <option value="ICS">International Cultural Studies</option>
+      <option value="IPB">Intercultural Peacebuilding</option>
+      <option value="JPN">Japanese</option>
+      <option value="LING">Linguistics</option>
+      <option value="AMOR">Maori</option>
+      <option value="MATH">Mathematics</option>
+      <option value="MUSC">Music</option>
+      <option value="OCEN">Oceanography</option>
+      <option value="PAIS">Pacific Island Studies</option>
+      <option value="PHSC">Physical Science</option>
+      <option value="POSC">Political Science</option>
+      <option value="PSYC">Psychology</option>
+      <option value="PMGT">Public Management</option>
+      <option value="REL">Religion</option>
+      <option value="SCI">Science</option>
+      <option value="SAMN">Samoan</option>
+      <option value="SCED">Secondary Education</option>
+      <option value="SOCW">Social Work</option>
+      <option value="SPAN">Spanish</option>
+      <option value="SPED">Special Education</option>
+      <option value="STDEV">Student Development</option>
+      <option value="TESOL">TESOL</option>
+      <option value="THEA">Theatre</option>
+      <option value="TONG">Tongan</option>
+      <option value="WLNG">World Language</option>
+    </datalist>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+      integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
