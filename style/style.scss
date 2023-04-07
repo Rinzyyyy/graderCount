@@ -48,11 +48,11 @@ body {
       height: 100%;
       background: linear-gradient(
         to top,
-        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.9),
         rgba(0, 0, 0, 0.8)
       );
       backdrop-filter: blur(1.6px);
-      z-index: -1;
+      z-index: 2;
     }
   }
 
@@ -93,6 +93,13 @@ body {
 
       div.inputs {
         form {
+          input[type="number"]::-webkit-outer-spin-button,
+          input[type="number"]::-webkit-inner-spin-button {
+            animation-name: arrow;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            opacity: 0.5;
+          }
           input,
           select {
             font-size: 1.05rem;
@@ -103,6 +110,7 @@ body {
             background-color: aliceblue;
             font-family: "Quantico", sans-serif;
             appearance: none;
+            -webkit-appearance: none;
           }
           select.selectGrade {
             width: 3.5rem;
@@ -186,5 +194,13 @@ body {
   }
   to {
     transform: scale(0);
+  }
+}
+@keyframes arrow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
   }
 }
