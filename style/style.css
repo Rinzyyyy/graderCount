@@ -35,6 +35,7 @@ body {
   background-color: rgba(0, 0, 0, 0.311);
   color: white;
   font-family: "Quantico", sans-serif;
+  width: 100vw;
 }
 body section.animation-wrapper {
   position: fixed;
@@ -184,5 +185,20 @@ body main .result section h1 {
   }
   to {
     opacity: 0.5;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=style.css.map */

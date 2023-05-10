@@ -34,6 +34,7 @@ body {
   background-color: rgba(0, 0, 0, 0.311);
   color: white;
   font-family: "Quantico", sans-serif;
+  width: 100vw;
 
   section.animation-wrapper {
     position: fixed;
@@ -202,5 +203,21 @@ body {
   }
   to {
     opacity: 0.5;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
   }
 }
